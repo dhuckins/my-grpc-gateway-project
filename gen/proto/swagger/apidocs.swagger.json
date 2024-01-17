@@ -16,7 +16,7 @@
     "application/json"
   ],
   "paths": {
-    "/kv/v1/get/{name}": {
+    "/kv/v1/{name}": {
       "get": {
         "operationId": "Get",
         "responses": {
@@ -44,9 +44,7 @@
         "tags": [
           "KvService"
         ]
-      }
-    },
-    "/kv/v1/put/{name}": {
+      },
       "post": {
         "operationId": "Put",
         "responses": {

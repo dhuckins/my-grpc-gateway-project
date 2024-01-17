@@ -23,13 +23,13 @@ message GetResponse {
 service KvService {
   rpc Put(PutRequest) returns (PutResponse) {
     option (google.api.http) = {
-      post: "/kv/v1/put/{name}"
+      post: "/kv/v1/{name}"
     };
   }
 
   rpc Get(GetRequest) returns (GetResponse) {
     option (google.api.http) = {
-      get: "/kv/v1/get/{name}"
+      get: "/kv/v1/{name}"
     };
   }
 }
